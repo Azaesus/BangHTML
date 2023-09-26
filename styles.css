@@ -1,0 +1,314 @@
+
+/* CSS reset */
+body,nav,p,img,iframe,a,main,body,header,div,center{ 
+    margin:0;
+    padding:0;
+    color: black;
+}
+/* 
+Changes the settings for the main text area
+*/
+main{
+    color: black;
+    text-decoration: none;
+    border-style: solid;
+    padding: 3%;
+}
+
+/* 
+Changes the settings for the body area
+*/
+body{
+    background-color:white;
+}
+
+/* Changes the settings for the header */
+header{
+    font-size:35px;
+    color: white;
+    font-weight: bold;
+    font-family: "Poppins", serif;
+    border-color: black;
+    border-width: .12em;
+    border-style: solid;
+    border-bottom-width: 4px;
+    padding: 20px;
+    text-align: center;
+    background-image: linear-gradient(to right, black, rgb(34, 34, 34));
+}
+
+/* 
+Changes the settings for image elements
+*/
+img{
+    max-width: 50%;
+    max-height: 50%;
+    display: block;
+    border-width: 7px;
+    background-image: linear-gradient(black, grey);
+}
+
+/* 
+Changes the settings for iframe elements
+*/
+iframe{
+    max-width: 50%;
+    display: block;
+    padding:1px;
+    border-width: 7px;
+    border-color: black;
+}
+
+/* Style rules for video elements */
+video{
+    border-style: solid;
+    border-color: goldenrod;
+    border-width: 5px;
+    border-radius: 5px;
+    width: 40%;
+    height: 40%;
+}
+#video {
+    display: block;
+}
+#audio {
+    display: block;
+}
+/* Changes the settings for the nav  */
+nav{
+    font-size: 20px;
+    border-color:black;
+    font-style: bold;
+    font-family: "Rubik", serif;
+    border-color: black;
+    border-width: .12em;
+    border-top-width:0px;
+    border-style: solid;
+    background-color: goldenrod;
+    padding: 15px;
+    align-items: center;
+    text-align: center;
+    background-image: linear-gradient( goldenrod, darkgoldenrod);
+}
+.topnav #links {
+    display: flex;
+    flex-direction: row;
+}
+
+a:link{
+    text-decoration: none;
+    color: black;
+    font-style: bold;
+    display: row;
+}
+a:hover{
+    text-decoration: none;
+    color: grey;
+    font-style: bold;
+    transform: scale(1);
+    animation-name: transition;
+    animation-duration: .25s;
+}
+.icon {
+    display: none;
+}
+.links {
+    display: flex;
+    flex-direction: row;
+}
+#internal {
+    color: cyan;
+}
+/* 
+Removes the bullet points from lists
+*/
+ol, ul, li{
+    list-style-type: none;
+}
+
+/* Style rules for text */
+#text {
+    font-size: 25px;
+    color: black;
+    font-family: "Poppins", serif;
+    column-count: 2;
+    margin-top: 5em;
+}
+#text2 {
+    font-size: 25px;
+    color: black;
+    font-family: "Poppins", serif;
+    margin-top: 5em;
+    text-decoration: none;
+    list-style-type: none;
+}
+.container2 {
+    text-align: center;
+}
+.contextual, #email, #telephone {
+    font-weight: bold;
+    color: teal;
+}
+.index, .seventeen, .eighteen, .nineteen, .twenty, .twentyone, .statistics, .mentions, .future, .settings, .centuries{
+    border-radius: 10px;
+    border-color: black;
+    border-width: 5px;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: row;
+}
+
+/* Changes style for caption */
+caption {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/* Changes the settings for the footer */
+footer{
+    font-family: "Poppins", serif;
+    border-style: solid;
+    border-width: .12em;
+    border-color: black;
+    text-align: center;
+    padding: 15px;
+    background-color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+/* Changes style for form */
+form{
+    width: 80%;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 25px;
+    color: black;
+    font-family: "Poppins", serif;
+}
+
+/* Changes settings for table */
+table {
+    width: 69%;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: auto;
+    margin-left: auto;
+    border: 2px solid #000;
+    border-collapse: collapse;
+}
+tr, th, td {
+    border-collapse: collapse;
+    padding: 2%;
+    border: 1px solid #000;
+}
+th, td {
+    border: 1px solid #000;
+    font-size: 25px;
+    color: black;
+    font-family: "Poppins", serif;
+}
+th {
+    background-color: goldenrod;
+    font-size: 25px;
+    color: black;
+    font-family: "Poppins", serif;
+}
+td {
+    background-color: whitesmoke;
+}
+
+/* Settings for hamburger icon */
+.topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+#absolute {
+    color: teal;
+}
+/* The animation code */
+@keyframes transition {
+    from {color: black;}
+    to {color: grey;}
+  }
+
+/* Display settings for mobile viewport */
+@media only screen and (max-width: 500px) {
+    .links {
+        flex-direction: column;
+    }
+    iframe {
+        height: 50%;
+        width: 50%;
+    }
+    .topnav {
+        overflow: hidden;
+        background-color: goldenrod;
+        position: relative;
+    }
+    .topnav a {
+        color: black;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+    .topnav a:hover {
+        background-color: darkgoldenrod;
+        color: black;
+        transform: scale(1.3);
+        background-color: black;
+        color: goldenrod;
+    }
+    .icon{
+        display: block;
+        transform: scale(1.9);
+    }
+    .topnav #links {
+        display: none;
+    }
+    #text {
+        column-count: 1;
+    }
+    /* Changes style for form */
+    form{
+        width: 40%;
+        color: black;
+        font-family: "Poppins", serif;
+    }
+    .honorable {
+        font-size: 1em;
+    }
+}
+
+/* Style rules for tablet viewports */
+@media only screen and (max-width: 950px) {
+    .links {
+        flex-direction: column;
+    }
+    iframe {
+        height: 50%;
+        width: 50%;
+    }
+    #text {
+        column-count: 2;
+    }
+}
+/* Style rules for large viewports */
+@media only screen and (min-width: 1400px) {
+    .links {
+        flex-direction: column;
+    }
+    #text {
+        column-count: 1;
+    }
+}
